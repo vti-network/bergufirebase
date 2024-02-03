@@ -1,0 +1,91 @@
+/* app.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #232526, #414345);
+  color: #fff;
+  /* overflow: hidden; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(131, 58, 180, 0.7);
+  }
+
+  70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(131, 58, 180, 0);
+  }
+
+  100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(131, 58, 180, 0);
+  }
+}
+
+/* Tambahkan gaya tambahan yang sesuai dengan halaman Dashboard */
+.dashboard-content {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+
+  /* .container {
+    padding: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  } */
+  .container {
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-top: 100;
+  }
+
+  .title {
+      font-size: 2rem;
+  }
+
+  .box {
+      width: 100px;
+      height: 100px;
+  }
+}
+
